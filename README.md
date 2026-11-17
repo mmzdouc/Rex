@@ -45,6 +45,9 @@ sudo chmod 660 /home/rex.sqlite
 docker-compose -f compose.yaml up --build
 ```
 
+Runs under `http://127.0.0.1:32780/`
+
+
 ### Local (not recommended)
 
 Ensure the following system dependencies are available:

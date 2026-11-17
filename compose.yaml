@@ -22,7 +22,7 @@ services:
       - "32780:3838"
     volumes:
       - type: bind
-        source: /home/rex.sqlite
+        source: /home/mitz/rex.sqlite
         target: /rex/rex.sqlite
       - shared-content:/tmp/
     # mem_limit: 512m        # Max memory
@@ -39,8 +39,6 @@ services:
     environment:
       - DOCKER=TRUE      
       - TRUE_MESSAGE_VALUE=FALSE        
-    environment:
-      - TRUE_MESSAGE_VALUE=FALSE  
     security_opt:
       - no-new-privileges:true
     cap_drop:
